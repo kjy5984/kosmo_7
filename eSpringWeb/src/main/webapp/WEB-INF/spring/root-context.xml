@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- 예제를 위한 빈생성 ( 추후에는 실제 DB 값을 얻어올 것임 ) -->
+	<bean id='memberVO' class="com.javaclass.basic.model.MemberVO">
+		<!-- property는 세터로 지정하는것 -->
+		<property name="id" value='0001'/>
+		<property name="name" value='홍길자'/>
+		<property name="age" value='25'/>
+	</bean>
+	
+		
+</beans>
+
+
+<!-- 스프링 설정 파일 -->
